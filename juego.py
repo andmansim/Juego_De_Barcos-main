@@ -61,7 +61,7 @@ def probar_fin_juego(self):
 
         return False
 
-
+'''
 def jugar_tirada(self):
         """Permite gestionar el dato introducido de una tirada"""
         while True:
@@ -76,7 +76,7 @@ def jugar_tirada(self):
             else:
                 casilla.jugar()
                 break
-
+'''
 def jugar_una_partida():
     """Algoritmo de una partida"""
     # Creamos un tablero de juego vacío
@@ -86,7 +86,7 @@ def jugar_una_partida():
     while True:
         tablero.ver() #tablero.ver()
 
-        jugar_tirada() #tablero.jugar_tirada()
+        tablero.jugar_tirada() #tablero.jugar_tirada()
 
         if probar_fin_juego(): #tablero.probar_fin_juego()
             # Si el juego ha terminado, salimos de la función

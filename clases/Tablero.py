@@ -1,7 +1,9 @@
+import sys
 from itertools import  product
 from clases.Case import Case1
 from clases.Barco import Barco1
 from clases import Conventions
+from introducir import cadena
 
 '''
 from clases.Case import *
@@ -34,7 +36,7 @@ class Tablero1:
     self.etiqueta_lineas = [num2l(x) for x in range(num_lineas)]
     self.etiqueta_columnas = [num2c(x) for x in range(num_columnas)]
     
-    trazo_horizontal = " --" + "+---" * 10 + "+"
+  trazo_horizontal = " --" + "+---" * 10 + "+"
 
   def ver(self):
     print("   |", " | ".join(self.etiqueta_columnas), "|")
@@ -57,4 +59,19 @@ class Tablero1:
             print(" |")
     # Ver la última línea horizontal
     print(self.trazo_horizontal + "\n\n")
+    
+  def jugar_tirada(self):
+        """Permite gestionar el dato introducido de una tirada"""
+        while True:
+            nombre_casilla = cadena.solicitar_introducir_casilla(     #solicitar_introducir_casilla
+                "Seleccionar una casilla (letra + cifra)")
+            # Encontrar la casilla a partir de su nombre
+            casilla = Case1.instances[nombre_casilla]
+            # Probar si la casilla ya ha sido jugada
+            if casilla.jugada:
+                print("Esta casilla ya ha sido jugada, elija otra",
+                    file=sys.stderr)
+            else:
+                casilla.jugar()
+                break
 

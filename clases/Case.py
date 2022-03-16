@@ -8,15 +8,15 @@ from itertools import cycle, chain, product, repeat
 #from clases import Case
 from clases import Conventions
 
-
+CASO_NO_JUGADO = chr(0x2610)
+CASO_TOCADO = chr(0x2611)
+CASO_AGUA = chr(0x2612)
 
 class Case1: # puesto en una clase
   instances = {}
   jugadas = set()
 
-  CASO_NO_JUGADO = chr(0x2610)
-  CASO_TOCADO = chr(0x2611)
-  CASO_AGUA = chr(0x2612)
+  
   def __init__(self, x, y):
     # Adición de las coordenadas
     self.x = x
