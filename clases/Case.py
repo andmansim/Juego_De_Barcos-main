@@ -42,10 +42,10 @@ class Case1: # puesto en una clase
     self.jugadas.add(self)
     
     if self.barco is not None:
-        if len(casilla.barco.casillas - self.casillas_jugadas) == 0: #casilla.barco.casillas
-            print("Hundido !!")
+        if len(self.barco.casillas - self.barco.casillas_jugadas) == 0: #casilla.barco.casillas
+            print("Tocado !!")
         else:
-            print("Tocado !")
+            print("Hundido !")
     else:
         print("Agua !")
 

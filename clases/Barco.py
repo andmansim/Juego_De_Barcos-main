@@ -15,6 +15,7 @@ ORIENTACIONES = (VERTICAL, HORIZONTAL)
 class Barco1:
     instances = []
     casillas_ocupadas = set()
+    casillas_jugadas = set()
     
     def __init__(self, longitud):
             self.longitud = longitud
@@ -56,6 +57,7 @@ class Barco1:
                         casilla.barco = self
                     # Agregar estas casillas a las casillas ocupadas :
                     Barco1.casillas_ocupadas |= self.casillas #Barco.casillas_ocupadas |= self.casillas
+                    Barco1.casillas_jugadas |= self.casillas
                     break  # break relativo al "while True:"
 
     @classmethod
