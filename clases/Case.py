@@ -5,7 +5,6 @@ from Conventions import *
 import sys
 
 from itertools import cycle, chain, product, repeat
-#from clases import Case
 from clases import Conventions
 
 CASO_NO_JUGADO = chr(0x2610)
