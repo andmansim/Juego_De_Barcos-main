@@ -81,8 +81,8 @@ def jugar_una_partida():
     """Algoritmo de una partida"""
     # Creamos un tablero de juego vacío
 
-    #tablero = TaTablero()
-
+    #tablero = Tablero()
+    
     while True:
         Tablero.ver() #tablero.ver()
 
