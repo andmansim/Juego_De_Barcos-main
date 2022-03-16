@@ -17,8 +17,8 @@ class Tablero1:
     #generar_casillas()
 
     # Creamos los barcos:
-    barco = Barco1()
-    barco.generar_barcos()
+    
+    Barco1.generar_barcos()
     #generar_barcos()
     
     # performance / legibilidad:
