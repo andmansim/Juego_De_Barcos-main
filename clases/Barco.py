@@ -4,7 +4,7 @@ import sys
 from itertools import cycle, chain, product, repeat
 from clases import Case
 from clases import Conventions
-from clases import Tablero
+
 
 HORIZONTAL = 0
 VERTICAL = 1
