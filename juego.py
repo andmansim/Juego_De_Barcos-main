@@ -84,13 +84,13 @@ def jugar_una_partida():
     #tablero = Tablero()
     tablero = Tablero1()
     while True:
-        tablero.ver() #tablero.ver()
+        tablero.ver() 
 
-        tablero.jugar_tirada() #tablero.jugar_tirada()
+        tablero.jugar_tirada()
 
-        if probar_fin_juego(): #tablero.probar_fin_juego()
+        if tablero.probar_fin_juego(): 
             # Si el juego ha terminado, salimos de la función
-            tablero.ver() #tablero.ver()
+            tablero.ver() 
             return
 
 
