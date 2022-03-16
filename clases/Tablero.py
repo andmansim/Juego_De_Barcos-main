@@ -12,8 +12,8 @@ class Tablero1:
 
   def __init__(self):
   # Creamos las casillas:
-    case = Case1()
-    case.generar_casillas()
+    
+    Case1.generar_casillas()
     #generar_casillas()
 
     # Creamos los barcos:
