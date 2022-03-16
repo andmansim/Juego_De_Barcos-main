@@ -3,7 +3,7 @@ import sys
 from itertools import cycle, chain, product, repeat
 from functools import reduce
 from random import shuffle, choice, random
-from clases import Tablero
+from clases.Tablero import Tablero1
 from clases import Case
 from clases import Barco
 from clases import Conventions
@@ -82,15 +82,15 @@ def jugar_una_partida():
     # Creamos un tablero de juego vacío
 
     #tablero = Tablero()
-    
+    tablero = Tablero1()
     while True:
-        Tablero.Tablero1.ver() #tablero.ver()
+        tablero.ver() #tablero.ver()
 
         jugar_tirada() #tablero.jugar_tirada()
 
         if probar_fin_juego(): #tablero.probar_fin_juego()
             # Si el juego ha terminado, salimos de la función
-            Tablero.Tablero1.ver() #tablero.ver()
+            tablero.ver() #tablero.ver()
             return
 
 

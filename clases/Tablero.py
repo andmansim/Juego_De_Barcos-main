@@ -1,6 +1,6 @@
 from itertools import  product
-from clases import Case
-from clases import Barco
+from clases.Case import Case1
+from clases.Barco import Barco1
 from clases import Conventions
 
 '''
@@ -12,11 +12,13 @@ class Tablero1:
 
   def __init__(self):
   # Creamos las casillas:
-    Case.generar_casillas()
+    case = Case1()
+    case.generar_casillas()
     #generar_casillas()
 
     # Creamos los barcos:
-    Barco.generar_barcos()
+    barco = Barco1()
+    barco.generar_barcos()
     #generar_barcos()
     
     # performance / legibilidad:
@@ -47,7 +49,7 @@ class Tablero1:
             print(self.trazo_horizontal)
             print(" {}".format(next(iter_etiqueta_lineas)), end="")
     
-        casilla = Case.instances[x, y]
+        casilla = Case1.instances[x, y]
         print(" |", casilla, end="")
     
         # Ver la barra vertical derecha de la tabla:
