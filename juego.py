@@ -51,7 +51,6 @@ HORIZONTAL = 0
 VERTICAL = 1
 
 ORIENTACIONES = (VERTICAL, HORIZONTAL)
-'''
 
 def probar_fin_juego(self):
         """Permite probar si el juego ha terminado o no"""
@@ -76,7 +75,7 @@ def jugar_tirada(self):
             else:
                 casilla.jugar()
                 break
-'''
+
 def jugar_una_partida():
     """Algoritmo de una partida"""
     # Creamos un tablero de juego vacío

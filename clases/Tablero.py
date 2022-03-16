@@ -74,4 +74,13 @@ class Tablero1:
             else:
                 casilla.jugar()
                 break
+  
+  def probar_fin_juego(self):
+        """Permite probar si el juego ha terminado o no"""
+        if len(Barco1.casillas_ocupadas - self.casillas_jugadas) == 0:
+            print("Bravo. El juego ha terminado !")
+            return True
+
+        return False
+
 
