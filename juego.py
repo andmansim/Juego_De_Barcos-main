@@ -4,9 +4,8 @@ from itertools import cycle, chain, product, repeat
 from functools import reduce
 from random import shuffle, choice, random
 from clases.Tablero import Tablero1
-from clases import Case
-from clases import Barco
-from clases import Conventions
+from clases.Case import Case1
+
 
 
 '''from itertools import cycle, chain, product, repeat
@@ -60,14 +59,14 @@ def probar_fin_juego(self):
 
         return False
 
-'''
+
 def jugar_tirada(self):
         """Permite gestionar el dato introducido de una tirada"""
         while True:
             nombre_casilla = solicitar_introducir_casilla(
                 "Seleccionar una casilla (letra + cifra)")
             # Encontrar la casilla a partir de su nombre
-            casilla = Case.instances[nombre_casilla]
+            casilla = Case1.instances[nombre_casilla]
             # Probar si la casilla ya ha sido jugada
             if casilla.jugada:
                 print("Esta casilla ya ha sido jugada, elija otra",
@@ -75,6 +74,7 @@ def jugar_tirada(self):
             else:
                 casilla.jugar()
                 break
+'''
 
 def jugar_una_partida():
     """Algoritmo de una partida"""
